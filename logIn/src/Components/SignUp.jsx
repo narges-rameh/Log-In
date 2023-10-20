@@ -36,7 +36,7 @@ const SignUp = () => {
                 <label htmlFor="">Name</label>
                 <br/>
                 <input type="text" name='name' value={data.name} onChange={changeHandler}/>
-                 {error.name && <span>{error.name}</span>}
+                 {errors.name && <span>{error.name}</span>}
                 </div>
 
                 <div>
