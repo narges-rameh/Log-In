@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Styles from '../Styles/Styles.module.css';
 
-import { validate } from './validate';
+import { validate } from '../Tools/validate';
 
 const SignUp = () => {
 
@@ -20,6 +20,7 @@ const SignUp = () => {
    }, [data])
 
    const changeHandler = event => {
+    console.log(event)
        if (event.target.name === 'isAccepted'){
            setData({...data, [event.target.name]: event.target.checked})
         } else{
